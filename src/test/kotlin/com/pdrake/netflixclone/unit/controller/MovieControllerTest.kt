@@ -1,4 +1,4 @@
-package com.pdrake.netflixclone.controller
+package com.pdrake.netflixclone.unit.controller
 
 import com.pdrake.netflixclone.controllers.MovieController
 import com.pdrake.netflixclone.entities.account.Account
@@ -13,14 +13,13 @@ import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest
 import org.springframework.boot.test.mock.mockito.MockBean
 import org.springframework.http.MediaType
 import org.springframework.security.core.authority.SimpleGrantedAuthority
-import org.springframework.security.core.userdetails.UserDetailsService
 import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.get
 
 @ExtendWith(MockitoExtension::class)
 @WebMvcTest(controllers = [MovieController::class])
-class MovieControllerTests {
+class MovieControllerTest {
 
     @Autowired
     private lateinit var mockMvc: MockMvc
